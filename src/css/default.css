@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100vh;
 }
 
 *,
@@ -34,7 +35,9 @@ button {
     cursor: pointer;
 }
 
-:active, :hover, :focus {
+:active,
+:hover,
+:focus {
     outline: 0;
     outline-offset: 0;
 }
@@ -46,10 +49,13 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-variant-numeric: lining-nums;
-    background-image: url("../public/main_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
 }
 
 .container {
@@ -57,14 +63,30 @@ body {
     margin: 0 auto;
 }
 
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .wrapper {
     background-color: rgba(112, 112, 112, 0.1);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(60px);
     border-radius: 8px;
     max-width: 1120px;
     min-height: 860px;
     margin: 32px 80px;
 }
+
+/* @media (min-width: 1800px) {
+    body {
+        height: 100vh;
+    }
+} */
 
 @media (max-width: 1260px) {
     .container {
@@ -76,12 +98,12 @@ body {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
     .container {
         padding: 0 10px;
     }
 
     .wrapper {
-        margin: 16px;
+        margin: 15px;
     }
 }

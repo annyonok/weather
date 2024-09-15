@@ -168,7 +168,7 @@
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 780px) {
     .weather__day {
         gap: 32px;
     }
@@ -256,5 +256,11 @@
     .progress__text {
         font-size: 10px;
         line-height: 120%;
+    }
+}
+
+@media (max-width: 420px) {
+    .weather__today {
+        padding: 10px;
     }
 }
