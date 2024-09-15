@@ -1,0 +1,29 @@
+.footer__remark {
+    max-width: 1120px;
+    padding: 32px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__remark_text {
+    font-size: 12px;
+    line-height: 125%;
+    color: #f5f4f4;    
+}
+
+.footer__remark_link {
+    text-decoration: underline;
+}
+
+@media (max-width: 730px) {
+    .footer__remark_text {
+        font-size: 8px;
+        line-height: 133%;   
+    }
+}
+
+@media (max-width: 460px) {
+    .footer__remark {
+        padding: 10px;
+    }
+}

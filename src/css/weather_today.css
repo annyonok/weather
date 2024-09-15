@@ -1,0 +1,260 @@
+.weather__today {
+    padding: 32px;
+}
+
+.weather__day {
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.weather__day_items {
+    padding: 8px;
+    width: 534px;
+    height: 408px;
+    text-align: center;
+    color: #f5f4f4;
+}
+
+.weather__day_item {
+    margin-bottom: 64px;
+}
+
+.weather__day_item:last-child {
+    margin-bottom: 0;
+}
+
+.weather__day_city {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    padding-bottom: 8px;
+}
+
+.weather__day_date {
+    font-size: 20px;
+    line-height: 120%;
+    padding-bottom: 8px;
+}
+
+.weather__day_time {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.weather__day_temp {
+    font-weight: 700;
+    font-size: 112px;
+    line-height: 100%;
+}
+
+.weather__day_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.weather__day_text {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.weather__day_feel {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.weather__today_cards {
+    width: 506px;
+    height: 408px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.weather__today_card {
+    border-radius: 8px;
+    padding: 16px;
+    width: 158px;
+    height: 196px;
+    background: rgba(245, 244, 244, 0.4);
+    text-align: center;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #202020;
+    margin-bottom: 16px;
+}
+
+.card__image {
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.card__meaning {
+    font-size: 32px;
+    line-height: 100%;
+    color: #202020;
+    margin-bottom: 16px;
+}
+
+.progress__container {
+    margin-bottom: 8px;
+}
+
+.progress__bar {
+    width: 128px;
+    height: 8px;
+    background-color: rgba(218, 218, 218, 0.4);
+    position: relative;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.progress__ball {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    transition: left 0.4s ease;
+    mask-image: radial-gradient(#000, transparent);
+}
+
+.progress__text_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress__text {
+    font-size: 12px;
+    line-height: 133%;
+    color: #393939;
+}
+
+@media (max-width: 1260px) {
+    .weather__today {
+        padding: 24px;
+    }
+
+    .weather__day {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .weather__day_items {
+        width: 672px;
+        height: 306px;
+    }
+
+    .weather__day_item {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 730px) {
+    .weather__day {
+        gap: 32px;
+    }
+
+    .weather__day_items {
+        width: 311px;
+        height: 184px;
+        margin-bottom: 32px;
+    }
+
+    .weather__day_item {
+        margin-bottom: 16px;
+    }
+
+    .weather__day_city {
+        font-size: 16px;
+        line-height: 125%;
+    }
+    
+    .weather__day_date {
+        font-size: 14px;
+        line-height: 114%;
+    }
+    
+    .weather__day_time {
+        font-size: 14px;
+        line-height: 114%;
+    }
+    
+    .weather__day_temp {
+        font-size: 56px;
+    }
+
+    .weather__day_text {
+        font-size: 14px;
+        line-height: 114%;
+    }
+    
+    .weather__day_feel {
+        font-size: 14px;
+        line-height: 114%;
+    }
+
+    .weather__today_cards {
+        width: 311px;
+        height: 304px;
+        gap: 8px;
+    }
+    
+    .weather__today_card {
+        padding: 12px 12px 16px 12px;
+        width: 98px;
+        height: 158px;
+    }
+
+    .card__title {
+        font-size: 12px;
+        line-height: 133%;
+    }
+    
+    .card__image {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .card__meaning {
+        font-size: 22px;
+        line-height: 100%;
+    }
+    
+    .progress__container {
+        margin-bottom: 8px;
+    }
+    
+    .progress__bar {
+        width: 74px;
+        height: 6px;
+    }
+    
+    .progress__ball {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .progress__text {
+        font-size: 10px;
+        line-height: 120%;
+    }
+}

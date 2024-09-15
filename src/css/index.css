@@ -1,0 +1,7 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "default.css";
+@import "header.css";
+@import "weather_today.css";
+@import "weather__hour.css";
+@import "footer.css";

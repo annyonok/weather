@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="icon" href="public/weather_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/script.js" defer></script>    
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+
+                <div class="header__items">
+                    <div class="header__logo">
+                        <a href="#"><img class="logo" src="public/logo.png" alt="Weather Logo"></a>
+                        <a href="#"><img class="logo__small" src="public/logo_small.svg" alt="Weather Logo"></a>
+                    </div>
+
+                    <div class="header__search">
+                        <form action="#" class="header__search_form" id="search-form">
+                            <input class="header__search_input" type="text" placeholder="Поиск по городу" id="search">
+                            <button class="header__search_btn" type="button" id="clear-button"></button>
+                            <button class="header__search_btn-close" type="button" id="close-button"></button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="weather__today">
+                <div class="container">
+
+                    <div class="weather__day">
+
+                        <div class="weather__day_items">
+
+                            <div class="weather__day_item">
+                                <h1 class="weather__day_city">Москва</h1>
+                                <p class="weather__day_date">Суббота, 06 января</p>
+                                <p class="weather__day_time">11:29</p>
+                            </div>
+
+                            <div class="weather__day_item">
+                                <p class="weather__day_temp">-7&#176;</p>
+                            </div>
+
+                            <div class="weather__day_item">
+                                <div class="weather__day_other">
+                                    <img src="public/cloudy.png" alt="Cloudy">
+                                    <p class="weather__day_text">Облачно</p>
+                                </div>
+                                <p class="weather__day_feel">Ощущается как -11&#176;</p>
+
+                            </div>
+                        </div>
+
+                        <div class="weather__today_cards" id="cards-container"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="weather__hour">
+                <div class="container">
+
+                    <div class="weather__hour_items">
+                        <h3 class="weather__hour_title">Прогноз: </h3>
+                        <a href="#" class="weather__hour_desc" id="item__hours">на 24 часа</a>
+                        <a href="#" class="weather__hour_desc" id="item__days">на 5 дней</a>
+                    </div>
+
+                    <div class="weather__slider">
+
+                        <div class="weather__hours_slider-items"  id="hours-container">
+                        </div>
+
+                        <div class="weather__days_slider-items"  id="days-container">
+                        </div>         
+                        
+                    </div>
+
+                    <button class="weather__hour_slider-btn slider__left"><svg width="11" height="20" viewBox="0 0 11 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1L1 10L10 19" stroke="#545454" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></button>
+
+                    <button class="weather__hour_slider-btn slider__right"><svg width="11" height="20" viewBox="0 0 11 20"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.999999 19L10 10L0.999997 1" stroke="#545454" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__remark">
+                    <p class="footer__remark_text">Все данные о погоде в этом проекте являются фейковыми и предназначены только для демонстрации функционала. Реальные погодные данные не используются.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
